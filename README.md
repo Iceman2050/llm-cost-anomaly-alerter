@@ -1,5 +1,7 @@
 # llm-cost-anomaly-alerter
 
+**Related:** [api-key-burn-watch](https://github.com/Iceman2050/api-key-burn-watch) — a tripwire for stolen AI provider API keys, alerting on daily burn-rate spikes and off-hours usage.
+
 **Your LLM API bill spiked at 3AM. You'll find out in 30 days, on the invoice.**
 
 A rogue script, a leaked key, a runaway loop — LLM spend anomalies are silent until the billing email arrives. This tool watches per-API-key usage and shouts the moment a key's hourly spend deviates from its own rolling baseline, with severity levels and webhook-ready alert payloads. The demo below detects an injected 25× cost spike in under a second.
